@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,71 +18,50 @@
     <![endif]-->
     <style media="screen">
       .height1{
-        height: 100px;
+        height: 50px;
       }
       .height2{
-        height: 300px;
+        height: 75px;
       }
       .height3{
-        height: 80px
+        height: 100px;
       }
-      .makeFitImage{
-        width: 100%;
-        height: 100%;
-      }
-      .textAlignCenter{/*centers the child elements*/
-        text-align: center;
-      }
-      .marginCenter{
-        display: block;
-        margin: 0 auto;
+      .height4{
+        height: 150px;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 height1">
-          <p class="text-primary">Our portfolio page example</p>
-          <p class="text-success">We use this colour for success</p>
-          <p class="text-danger">We use this colour for danger</p>
-        </div>
+        <div class="col-md-3 height1 randomColor"></div>
+        <div class="col-md-9 height1 randomColor"></div>
       </div>
+
       <div class="row">
-        <div class="col-md-12 height2">
-          <p class="bg-primary">Primary background</p>
-          <p class="bg-success">Success background</p>
-          <p class="bg-info">Information background</p>
-          <p class="bg-warning">Warning background</p>
-          <p class="bg-danger">Danger background</p>
-        </div>
+        <div class="col-md-7 height4 randomColor"></div>
+        <div class="col-md-5 height4 randomColor"></div>
       </div>
+
       <div class="row">
-        <div class="col-md-3 height3">
-          <img class="makeFitImage" src="img/food1.png" alt="food1">
+        <div class="col-md-7 height4 randomColor">
+          <div class="row">
+            <div class="col-md-9 height3 randomColor"></div>
+            <div class="col-md-3 height3 randomColor"></div>
+          </div>
         </div>
-        <div class="col-md-3 height3">
-          <img src="img/food2.gif" alt="food2">
+        <div class="col-md-3 height4 randomColor">
+          <div class="row">
+            <div class="col-md-9 height3 randomColor"></div>
+            <div class="col-md-3 height3 randomColor"></div>
+          </div>
         </div>
-        <div class="col-md-3 height3">
-          <img class="makeFitImage" src="img/food3.jpg" alt="food3">
-        </div>
-        <div class="col-md-3 height3">
-          <img class="makeFitImage" src="img/food4.jpg" alt="food4">
-        </div>
+        <div class="col-md-2 height4 randomColor"></div>
       </div>
+
       <div class="row">
-        <div class="col-md-3 height3 textAlignCenter">
-          <img src="img/food5.jpg" alt="food5">
-        </div>
-        <div class="col-md-3 height3">
-          <img class="marginCenter" src="img/food6.png" alt="food6">
-        </div>
-        <div class="col-md-3 height3 randomColor"></div>
-        <div class="col-md-3 height3 randomColor"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 height1 randomColor"></div>
+        <div class="col-md-7 height2 randomColor"></div>
+        <div class="col-md-5 height2 randomColor"></div>
       </div>
 
     </div>
