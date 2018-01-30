@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style media="screen">
+      .height1{
+        height: 75px;
+      }
+      .height2{
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 height1 randomColor"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 height2 randomColor"></div>
+        <div class="col-md-8 height2 randomColor"></div>
+        <div class="col-md-2 height2 randomColor"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 height1 randomColor"></div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+//when the document is loaded
+  $(document).ready(function() {
+    //this function gets a random color between 0 and 255
+    function getRandomColor() {
+      return Math.floor(Math.random() * 255);
+    }
+
+//get all the elements (div) with the class .randomColor
+    var randomColor = $(".randomColor");
+
+//loop through all elements
+//for each element, change the css background-color to RGB + three random colours
+    $.each(randomColor, function(index, item) {
+      $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+    })
+
+  })
+  </script>
+  <script type="text/javascript">
+  /*
+multi-line comment
+  */
+//single line comment
+  /*
+    //alert("my JS!");
+    //name of a function, then () to call a function
+    //in this case "my JS!" is called the 'parameter'
+    //in this case its text, which is always within '' or ""
+    console.log("Write to the console.....")
+
+    //above are built-in functions
+
+    //we can also define our own functions
+
+    function myFirstFunction(){//function definition
+//whatever is in the curly brackets will run when we call the function
+      console.log("Write from inside the function.....")
+    }
+
+    myFirstFunction();
+    myFirstFunction();
+    myFirstFunction();
+    myFirstFunction();
+
+    function myFunctionWithParameter(name){
+
+      console.log("Hello "+name);
+    }
+
+    myFunctionWithParameter("Sarah");
+    myFunctionWithParameter(" , how are you?");
+
+//a function call
+*/
+//variables defined with var keyword
+
+//Boolean values are true or false
+var myOnOff = true;
+var isDayTime = false;
+
+
+//number values
+var salary = 1000000;
+var carPrice = 25000.25;
+
+//text or string
+var emailAddress = "sluu01@guelphhumber.ca";
+var sentence = 'Yummy in my tummy.';
+var anotherSentence = "Sarah's class";
+
+//"" double quotations means it the variable beomces a string
+var salary1 = 1000000;
+var salary2 = "1000000";
+
+var taxes = 25000;
+
+console.log("My take home pay is " + (salary1-taxes));
+
+console.log("1a bunch of info : " + salary + " and " + carPrice + " and even more " + isDayTime);
+var myConcatenation = "2a bunch of info : " + salary + " and " + carPrice + " and even more " + isDayTime;
+
+console.log(myConcatenation);
+
+function writeToConsole(myString){
+  console.log(myString);
+}
+writeToConsole(myConcatenation);
+writeToConsole("3"+myConcatenation);
+
+
+
+
+  </script>
+  </body>
+</html>
