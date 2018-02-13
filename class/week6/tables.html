@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Dosis:600|Nunito');
       .height1{
         height: 100px;
         background-color: #00B9FF;
@@ -28,6 +29,11 @@
       .height3{
         height: 75px;
         background-color: #005C7F;
+      }
+      .height4{
+        height: 320px;
+        background-image: url("img/welcomeImage.jpg");
+        background-position: center;
       }
       .middle{
         background-color: #FFF;
@@ -52,6 +58,11 @@
         list-style: none;
         text-transform: uppercase;
         font-size: 20px;
+        font-family: 'Dosis', sans-serif;
+      }
+      h1{
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
       }
       ul li a, ul li a:hover{
         text-decoration: none;
@@ -63,13 +74,25 @@
       .nav{
         line-height: 75px;
       }
+      .ad{
+        height: 380px;
+        background-image: url("img/ad.jpg");
+        background-size: 480px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      body{
+        background-image: url("img/pattern.jpg");
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="row height4"></div>
+
       <div class="row">
         <div class="col-md-12 height1 flexSingleItem">
-          <h1>Pyeongchang Winter Olympics 2018</h1>
+          <h1>평창 동계 올림픽 2018</h1>
         </div>
       </div>
 
@@ -80,7 +103,7 @@
             <li><a href="#">Sports</a></li>
             <li><a href="#">Highlights</a></li>
             <li><a href="#">Stream</a></li>
-            <li><a href="#">Countries</a></li>
+            <li><a href="#">Sponsors</a></li>
           </ul>
         </div>
       </div>
@@ -93,9 +116,9 @@
 
       <div class="row">
         <div class="col-md-2 height2 flexVertSpaceAround">
+          <img class="logo" src="img/skate.gif" alt="Skating">
           <img class="logo" src="img/logo.jpg" alt="Olympic Logo">
-          <img class="logo" src="img/logo.jpg" alt="Olympic Logo">
-          <img class="logo" src="img/logo.jpg" alt="Olympic Logo">
+          <img class="logo" src="img/snowboard.gif" alt="Snowboarding">
         </div>
         <div class="col-md-8 height2 middle">
           <table class="table table-striped table-hover">
@@ -124,6 +147,14 @@
             </tr>
 
             <tr>
+              <td>United States</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2</td>
+              <td>6</td>
+            </tr>
+
+            <tr>
               <td>Norway</td>
               <td>2</td>
               <td>4</td>
@@ -140,45 +171,62 @@
             </tr>
 
             <tr>
-              <td>United States</td>
+              <td>France</td>
               <td>2</td>
+              <td>0</td>
               <td>1</td>
-              <td>1</td>
-              <td>4</td>
+              <td>3</td>
             </tr>
+
+            <tr>
+              <td>Sweden</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+
+            <tr>
+              <td>Austria</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <td>Republic of Korea</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <td>Japan</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
           </table>
         </div>
-        <div class="col-md-2 height2"></div>
+        <div class="col-md-2 height2">
+          <div class="ad"></div>
+        </div>
       </div>
 
       <div class="row">
         <div class="col-md-12 height3"></div>
       </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
 
-//when the document is loaded
-  $(document).ready(function() {
-    //this function gets a random color between 0 and 255
-    function getRandomColor() {
-      return Math.floor(Math.random() * 255);
-    }
-
-//get all the elements (div) with the class .randomColor
-    var randomColor = $(".randomColor");
-
-//loop through all elements
-//for each element, change the css background-color to RGB + three random colours
-    $.each(randomColor, function(index, item) {
-      $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
-    })
-
-  })
-</script>
   </body>
 </html>
