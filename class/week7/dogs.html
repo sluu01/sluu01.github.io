@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand|Work+Sans:500');
+      .height1{
+        height: 120px;
+        border-bottom-color: brown;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        margin-bottom: 20px;
+      }
+      .height2{
+        height: 50px;
+      }
+      .height3{
+        height: 600px;
+      }
+      .height4{
+        height: 100px;
+        border-top-color: brown;
+        border-top-style: solid;
+        border-top-width: 3px;
+      }
+      .flexSingleItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexSpaceAround{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .print{
+        background-image: url("img/dog5.jpg");
+        background-position: center;
+      }
+      h1{
+        font-family: 'Amatic', serif;
+        font-size: 70px;
+      }
+      ul li{
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+      }
+      ul li a, ul li a:hover{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 height1">
+          <h1 class="flexSingleItem">My Puppers</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 height2">
+          <ul class="flexSpaceAround">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Breeds</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 output"></div>
+        <div class="col-md-4 height3 print"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 height4">
+          <p class="flexSingleItem">Enjoy my puppers! :)</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+  //when the document is loaded
+  $(document).ready(function() {
+    //this function gets a random color between 0 and 255
+    function getRandomColor() {
+      return Math.floor(Math.random() * 255);
+    }
+
+  //get all the elements (div) with the class .randomColor
+    var randomColor = $(".randomColor");
+
+  //loop through all elements
+  //for each element, change the css background-color to RGB + three random colours
+    $.each(randomColor, function(index, item) {
+      $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+    })
+
+  })
+  </script>
+
+  <script>
+  var dogs =
+  [
+    {
+      "breed": "husky",
+      "color": "black & white",
+      "goodDog": true,
+      "age": 3,
+      "imgUrl": "img/dog0.jpg"
+    },
+    {
+      "breed": "shiba inu",
+      "color": "orange",
+      "goodDog": false,
+      "age": 1,
+      "imgUrl": "img/dog1.jpg"
+    },
+    {
+      "breed": "retriever",
+      "color": "yellow",
+      "goodDog": true,
+      "age": 4,
+      "imgUrl": "img/dog2.jpg"
+    },
+    {
+      "breed": "pug",
+      "color": "black & brown",
+      "goodDog": false,
+      "age": 7,
+      "imgUrl": "img/dog3.jpg"
+    },
+    {
+      "breed": "samoyed",
+      "color": "white",
+      "goodDog": true,
+      "age": 3,
+      "imgUrl": "img/dog4.jpg"
+    },
+  ];
+
+  $(document).ready(function(){
+    //$(".output").html("test output");
+    var html="<table class='table table-striped table-hover'>"+
+    "<tr>"+
+      "<th>Picture</th>"+
+      "<th>Breed</th>"+
+      "<th>Color</th>"+
+      "<th>Good Dog</th>"+
+      "<th>Age</th>"+
+    "</tr>";
+
+    //here is the loop of the array 'cats'
+
+    for(var i=0;i<dogs.length;i++){
+      console.log("i " +i);
+      html+= "<tr>"+
+          "<td><img src='"+dogs[i].imgUrl+"' /></td>"+
+          "<td>"+dogs[i].breed+"</td>"+
+          "<td>"+dogs[i].color+"</td>"+
+          "<td>"+dogs[i].goodDog+"</td>"+
+          "<td>"+dogs[i].age+"</td>"+
+        "</tr>";
+    }
+    html += "</table>";
+    $(".output").html(html);
+  });
+
+
+
+  </script>
+
+
+
+
+  </body>
+</html>
