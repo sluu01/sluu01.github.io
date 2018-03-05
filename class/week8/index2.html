@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- drop the code in here -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+      var slides = [
+      {
+        "source":"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=468a8c18f5d811cf03c654b653b5089e&auto=format&fit=crop&w=750&q=80",
+        "alternate":"canoe and mountain",
+        "caption":"Going to the mountains.",
+        "slideClass":"item active"
+      },
+
+      {
+        "source":"https://images.unsplash.com/photo-1505245208761-ba872912fac0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=608629c5a6a368d239d44bf9e84956b8&auto=format&fit=crop&w=750&q=80",
+        "alternate":"beach",
+        "caption":"A lovely beach.",
+        "slideClass":"item"
+      },
+
+      {
+        "source":"https://images.unsplash.com/photo-1504614487112-83bb0ee7e407?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63f428e79f9a11e290fed2fb359da6dc&auto=format&fit=crop&w=755&q=80",
+        "alternate":"House by the lake",
+        "caption":"House by the lake.",
+        "slideClass":"item"
+      }
+
+
+
+      ];
+
+      var slidesHtml = "";
+      for(var i=0;i<slides.length;i++){
+        console.log("i "+i);
+        // anytime you end and begin a sting, you put it in single quotes; everything in between is variables
+        slidesHtml+='<div class="'+slides[i].slideClass+'">'
+          +'<img src="'+slides[i].source+'" alt="'+slides[i].alternate+'">'
+          +'<div class="carousel-caption">'
+          +slides[i].caption
+          +'</div>'
+        +'</div>';
+      }
+
+      $(document).ready(function(){
+        $(".carousel-inner").html(slidesHtml);
+        // we need to explicity call this with dynamic html
+        $(".carousel").carousel();
+      })
+
+    </script>
+
+
+  </body>
+</html>
