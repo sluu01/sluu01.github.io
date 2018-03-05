@@ -1,6 +1,6 @@
 [
   {
-    "class":"item active",
+    "class":"food",
     "name": "poutine",
     "caption":"fries with cheese curds and gravy",
     "type":"fries",
@@ -8,7 +8,7 @@
     "origin": "Montreal"
   },
   {
-    "class":"item",
+    "class":"food",
     "name":"sushi",
     "caption":"raw fish wrapped in rice and seaweed",
     "type":"fish",
@@ -16,7 +16,7 @@
     "origin":"Japan"
   },
   {
-    "class":"item",
+    "class":"food",
     "name":"dim sum",
     "caption":"dumplings usually filled with meat",
     "type":"dumplings",
@@ -24,7 +24,7 @@
     "origin":"Hong Kong"
   },
   {
-    "class":"item",
+    "class":"food",
     "name":"pasta",
     "caption":"tomato sauce with noodles",
     "type":"noodles",
@@ -32,7 +32,7 @@
     "origin":"Italy"
   },
   {
-    "class":"item",
+    "class":"food",
     "name":"croissant",
     "caption":"delicious French bread",
     "type":"bread",
