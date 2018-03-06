@@ -27,7 +27,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
-    var url = "https://sluu01.github.io/class/week8/myJSON.json"
+    var url = "https://sluu01.github.io/class/week8/assets/myJSON.json"
 
     $.getJSON(url).done(function(data){
       console.log("success! ");
@@ -37,7 +37,7 @@
       for(var i=0;i<data.length;i++){
         console.log("i "+i);
         // anytime you end and begin a sting, you put it in single quotes; everything in between is variables
-        dataHtml+='<ul><li>'+data[i].class+'</li>'
+        dataHtml+='<ul><li><h3>'+data[i].class+'</h3></li>'
           +'<li>'+data[i].name+'</li>'
           +'<li>'+data[i].caption+'</li>'
           +'<li>'+data[i].type+'</li>'

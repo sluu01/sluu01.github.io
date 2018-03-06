@@ -1,0 +1,43 @@
+[
+  {
+    "class":"food",
+    "name": "poutine",
+    "caption":"fries with cheese curds and gravy",
+    "type":"fries",
+    "temperature":"hot",
+    "origin": "Montreal"
+  },
+  {
+    "class":"food",
+    "name":"sushi",
+    "caption":"raw fish wrapped in rice and seaweed",
+    "type":"fish",
+    "temperature":"cold",
+    "origin":"Japan"
+  },
+  {
+    "class":"food",
+    "name":"dim sum",
+    "caption":"dumplings usually filled with meat",
+    "type":"dumplings",
+    "temperature":"hot",
+    "origin":"Hong Kong"
+  },
+  {
+    "class":"food",
+    "name":"pasta",
+    "caption":"tomato sauce with noodles",
+    "type":"noodles",
+    "temperature":"hot",
+    "origin":"Italy"
+  },
+  {
+    "class":"food",
+    "name":"croissant",
+    "caption":"delicious French bread",
+    "type":"bread",
+    "temperature":"warm",
+    "origin":"France"
+  }
+
+]
