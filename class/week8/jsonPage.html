@@ -21,7 +21,9 @@
       h1{
         font-family: 'Delius Unicase', cursive;
         font-size: 60px;
-        margin-bottom: 30px;
+        border-bottom-color: pink;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
         margin-top: 50px;
       }
       h3{
@@ -53,13 +55,27 @@
         justify-content: center;
         align-items: center;
       }
+      li{
+        font-size: 16px;
+      }
+      .pinky{
+        border-right-color: pink;
+        border-right-style: solid;
+        border-right-width: 4px;
+        border-left-color: pink;
+        border-left-style: solid;
+        border-left-width: 4px;
+      }
+      .row{
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-md-12 flex">
-          <h1>Sarah's Comfort Food</h1>
+          <h1>Sarah's Comfort Foods</h1>
         </div>
       </div>
 
@@ -72,7 +88,7 @@
 
       <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8 output"></div>
+        <div class="col-md-8 output pinky"></div>
         <div class="col-md-2"></div>
       </div>
 
