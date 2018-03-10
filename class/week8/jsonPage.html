@@ -16,9 +16,65 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Delius+Unicase');
+      h1{
+        font-family: 'Delius Unicase', cursive;
+        font-size: 60px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+      h3{
+        font-family: 'Delius Unicase', cursive;
+        background-color: yellow;
+      }
+      .fit1{
+        height: 250px;
+        background-image: url("https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b476c11d5b658cd28bdd4920279ecf7a&auto=format&fit=crop&w=500&q=60");
+        background-position: 20%;
+      }
+      .fit2{
+        height: 250px;
+        background-image: url("https://images.unsplash.com/photo-1511344407683-b1172dce025f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b9e6c31dea9271a9973ff52fe9c8ed92&auto=format&fit=crop&w=500&q=60");
+        background-position: 20%;
+      }
+      .fit3{
+        height: 250px;
+        background-image: url("https://images.unsplash.com/photo-1518983546435-91f8b87fe561?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=662b1bb26c9a79c622ab894ec66dcb0b&auto=format&fit=crop&w=500&q=60");
+        background-position: 20%;
+      }
+      .fit4{
+        height: 250px;
+        background-image: url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c9443baefd581d4e532b6d4f1e7879be&auto=format&fit=crop&w=500&q=60");
+        background-position: 70%;
+      }
+      .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="output">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 flex">
+          <h1>Sarah's Comfort Food</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 fit1"></div>
+        <div class="col-md-3 fit2"></div>
+        <div class="col-md-3 fit3"></div>
+        <div class="col-md-3 fit4"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 output"></div>
+        <div class="col-md-2"></div>
+      </div>
 
     </div>
 
@@ -45,6 +101,7 @@
           +'<li>'+data[i].origin+'</li>'
         +'</ul>';
       }
+
 
       $(document).ready(function(){
         $(".output").html(dataHtml);
