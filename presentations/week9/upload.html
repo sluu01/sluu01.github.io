@@ -17,12 +17,20 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Tinos');
+    @import url('https://fonts.googleapis.com/css?family=Bad+Script');
       body{
         max-width: 100%;
         padding: 10px;
       }
       h1{
         text-align: center;
+        font-size: 105px;
+        font-family: 'Bad Script', cursive;
+        margin-bottom: 30px;
+        background-color: #69110A;
+        color: #FFF;
+        padding-top: 140px;
       }
       img{
         margin-left: auto;
@@ -30,51 +38,79 @@
         display: block;
         margin-bottom: 20px;
       }
-      ul li{
+      ul{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: #990002;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: #990002;
+      }
+      ul li{
+        text-decoration: none;
+        color: #000;
+        list-style-type: none;
+        font-size: 24px;
+      }
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+      a:hover{
+        text-decoration: none;
+        background-color: #69110A;
+        color: #FFF;
+      }
+      .big{
+        font-size: 180px;
+        border-bottom-style: solid;
+        border-bottom-color: #FFF;
+        border-bottom-width: 4px;
+        margin-bottom: 20px;
       }
     </style>
 </head>
 <body>
 
 <header>
-  <h1> Sarah's (Incomplete) Diner Menu</h1>
+  <h1><div class="big">Sarah's</div>Diner Menu</h1>
 </header>
 
 <nav>
   <ul>
-    <li>Appetizers</li>
-    <li>Soups & Salads</li>
-    <li>Mains</li>
-    <li>Sides</li>
-    <li>Beverages</li>
-    <li>Desserts</li>
+    <li><a href="#appetizers">Appetizers</a></li>
+    <li><a href="#soups">Soups & Salads</a></li>
+    <li><a href="#mains">Mains</a></li>
+    <li><a href="#sides">Sides</a></li>
+    <li><a href="#beverages">Beverages</a></li>
+    <li><a href="#desserts">Desserts</a></li>
   </ul>
 </nav>
 
 <!-- Insert Appetizers PNG Mock up Here -->
-<img src="img/appetizers.png" alt="appetizers">
+<img id="appetizers" src="img/appetizers.png" alt="appetizers">
 
 <!-- Insert Soups and Salads PNG Mock up Here -->
-<img src="img/soups-salads.png" alt="soups and salads">
+<img id="soups" src="img/soups-salads.png" alt="soups and salads">
 
 
 <!-- Insert Mains PNG Mock up Here -->
-<img src="img/mains.png" alt="mains">
+<img id="mains" src="img/mains.png" alt="mains">
 
 
 <!-- Insert Sides PNG Mock up Here -->
-<img src="img/sides.png" alt="sides">
+<img id="sides" src="img/sides.png" alt="sides">
 
 
 <!-- Insert Beverages PNG Mock up Here -->
-<img src="img/beverages.png" alt="beverages">
+<img id="beverages" src="img/beverages.png" alt="beverages">
 
 
 <!-- Insert Desserts PNG Mock up Here -->
-<img src="img/desserts.png" alt="desserts">
+<img id="desserts" src="img/desserts.png" alt="desserts">
 
 
 
