@@ -97,7 +97,7 @@ select{
 
 /*mark 2*/
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
-.proAndTitle {
+.proAndTitle{
   background-color: #333;
   color: #fff;
   font-family: Arvo;
@@ -113,6 +113,31 @@ select{
 .proAndPrice{
   background-color:#fff;
   color: #333;
+  font-family: Arvo;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border:1px solid #333;
+}
+.sarLuuBreed{
+  background-color: pink;
+  color: #000;
+  font-family: Arvo;
+  font-weight: bold;
+  /* text-shadow: -3px -3px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222, 3px 3px 0 #222, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff; */
+  /* line-height: 0.8em; */
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.sarLuuName{
+  background-color:#333;
+  color: #fff;
   font-family: Arvo;
   font-weight: bold;
   letter-spacing: 0.2em;
