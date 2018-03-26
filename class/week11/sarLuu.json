@@ -1,0 +1,34 @@
+{
+  "Sheet1": {
+    "1": {
+      "itemId": 1,
+      "sarLuuBreed": "Husky",
+      "sarLuuName": "Snow",
+      "sarLuuImageUrl": "sluu01.github.io/class/week11/img/dog0.jpg"
+    },
+    "2": {
+      "itemId": 2,
+      "sarLuuBreed": "Shiba",
+      "sarLuuName": "Pupper",
+      "sarLuuImageUrl": "sluu01.github.io/class/week11/img/dog1.jpg"
+    },
+    "3": {
+      "itemId": 3,
+      "sarLuuBreed": "Lab",
+      "sarLuuName": "Meep",
+      "sarLuuImageUrl": "sluu01.github.io/class/week11/img/dog2.jpg"
+    },
+    "4": {
+      "itemId": 4,
+      "sarLuuBreed": "Pug",
+      "sarLuuName": "Boop",
+      "sarLuuImageUrl": "sluu01.github.io/class/week11/img/dog3.jpg"
+    },
+    "5": {
+      "itemId": 5,
+      "sarLuuBreed": "Samoyed",
+      "sarLuuName": "Doggo",
+      "sarLuuImageUrl": "sluu01.github.io/class/week11/img/dog4.jpg"
+    }
+  }
+}
