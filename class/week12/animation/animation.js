@@ -157,6 +157,13 @@ var spriteImages = [{
     "width": 4800,
     "height": 200,
     "name": "cat"
+  },
+  {
+    "spriteMapUrl": "images/iceCream2.png",
+    "numFrames": 5,
+    "width": 2500,
+    "height": 1259,
+    "name": "dessert"
   }
 ];
 var animations = []; //an array to hold the currently existing sprite obects
