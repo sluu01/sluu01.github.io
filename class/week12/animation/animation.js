@@ -114,7 +114,7 @@ function destroyAnimation(animation) {
 //create a sprite
 function spawnAnimation() {
 
-  var spriteIndex = Math.floor(Math.random() * spriteImages.length ); //get a random index from spriteImages
+  var spriteIndex = Math.floor(Math.random() * spriteImages.length + 1) - 1; //get a random index from spriteImages
   var animationImg = new Image(); //make an image object
   animationImg.src = spriteImages[spriteIndex].spriteMapUrl; //get a random sprite sheet
   var scaleRatio = Math.random() * 0.5 + 0.5; //get a random scale
