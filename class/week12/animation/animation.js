@@ -164,6 +164,13 @@ var spriteImages = [{
     "width": 2500,
     "height": 1259,
     "name": "dessert"
+  },
+  {
+    "spriteMapUrl": "images/masae.png",
+    "numFrames": 29,
+    "width": 2900,
+    "height": 100,
+    "name": "girl"
   }
 ];
 var animations = []; //an array to hold the currently existing sprite obects
